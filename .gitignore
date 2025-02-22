@@ -38,3 +38,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+MovieTickets-server/.env.local
+MovieTickets-server/.env.local.php
+MovieTickets-server/.env.*.local
+MovieTickets-server/config/secrets/prod/prod.decrypt.private.php
+MovieTickets-server/public/bundles/
+MovieTickets-server/var/
+MovieTickets-server/vendor/
+
+MovieTickets-server/config/jwt/*.pem
