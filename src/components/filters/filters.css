@@ -1,0 +1,11 @@
+.filterMenu {
+    position: absolute;
+    backdrop-filter: blur(4px);
+    background: rgba(0,0,0,0.3); 
+    border-radius: 8px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    z-index: 20;
+    display: flex;
+    padding: 16px;
+}
