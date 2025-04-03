@@ -23,8 +23,8 @@ class TicketFixture extends Fixture implements DependentFixtureInterface
         $shows = $this->showRepository->findAll();
         for ($i = 0; $i < 30*random_int(30,100); $i++) {
             $ticket = new Ticket();
-            $ticket->setClient($users[random_int(1,count($users)-1)]);
-            $ticket->setShow($shows[random_int(1,count($shows)-1)]);
+            $ticket->setClient($users[random_int(0,count($users)-1)]);
+            $ticket->setShow($shows[random_int(0,count($shows)-1)]);
             $ticket->setSeat(1);
             $manager->persist($ticket);
         }

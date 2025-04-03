@@ -20,13 +20,13 @@ final class Version20250120172159 extends AbstractMigration
     public function up(Schema $schema): void
     {
         // this up() migration is auto-generated, please modify it to your needs
-        $this->addSql('ALTER TABLE ticket ALTER seat_number DROP NOT NULL');
+        $this->addSql('ALTER TABLE ticket ALTER seat DROP NOT NULL');
     }
 
     public function down(Schema $schema): void
     {
         // this down() migration is auto-generated, please modify it to your needs
         $this->addSql('CREATE SCHEMA public');
-        $this->addSql('ALTER TABLE ticket ALTER seat_number SET NOT NULL');
+        $this->addSql('ALTER TABLE ticket ALTER seat SET NOT NULL');
     }
 }

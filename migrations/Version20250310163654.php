@@ -21,7 +21,7 @@ final class Version20250310163654 extends AbstractMigration
     {
         // this up() migration is auto-generated, please modify it to your needs
         $this->addSql('ALTER TABLE "user" ADD email VARCHAR(255) NOT NULL');
-        $this->addSql('ALTER TABLE "user" ALTER COULMN email drop default');
+        //$this->addSql('ALTER TABLE "user" ALTER COULMN email drop default');
     }
 
     public function down(Schema $schema): void

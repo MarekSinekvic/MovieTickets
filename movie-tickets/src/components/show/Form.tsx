@@ -85,7 +85,6 @@ export const Form: FunctionComponent<Props> = ({ show }) => {
     if (!window.confirm("Are you sure you want to delete this item?")) return;
     deleteMutation.mutate({ id: show["@id"] });
   }; 
-  
 
   return (
     <div className="container mx-auto px-4 max-w-2xl mt-4">
@@ -151,8 +150,8 @@ export const Form: FunctionComponent<Props> = ({ show }) => {
             </>) : ''}
             <div className="flex flex-col gap-1">
               <div className="flex flex-col gap-2 items-center">
-                <div>
-                  <div>{selectedMovie.preview}</div>
+                <div className="flex flex-col justify-center">
+                  {selectedMovie?.preview?.file ? <img src={selectedMovie?.preview?.file}/> : ''}
                   <div>{selectedMovie.name} : {selectedMovie["@id"]}</div>
                 </div>
                 <div className="flex gap-1">
